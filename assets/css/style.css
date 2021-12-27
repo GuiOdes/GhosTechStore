@@ -1,0 +1,234 @@
+/* importação de fontes do google */
+@import url('https://fonts.googleapis.com/css2?family=Yuji+Mai&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;900&display=swap'); /* Montserrat */
+
+/* resetando estilo do site */
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#navmenu {
+    width: 100%;
+    list-style: none;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    text-align: center;
+}
+
+#navmenu li, #navmenu li a {
+    padding: 20px;
+}
+
+#navmenu li {
+    margin-bottom: 2em;
+}
+
+#logo-img {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    transition: 1s;
+    width: 7em;
+    margin-bottom: -1.5em;
+}
+
+#logo-img:hover {
+    margin-top: -10px;
+    transition: 1s;
+}
+
+#logo span {
+    font-family: 'Yuji Mai', serif;
+    font-size: 70px;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+input[type="image"] {
+    background-color: #EB8242;
+    font-weight: 700;
+}
+
+#navmenu li a {
+    transition: .3s;
+    font-family:'Courier New', monospace;
+    border: solid;
+    border-radius: 20px 0 20px;
+    font-size: 2em;
+}
+
+#navmenu li a:hover {
+    font-size: 2.3em;
+    transition: .3s;
+}
+
+.btn-voltar {
+    position: absolute;
+    width: 180px;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+    font-weight: 800;
+    border: solid #fff;
+    border-radius: 20px;
+    text-align: center;
+    margin: 10px 0 0 10px;
+    transition: .3s;
+}
+
+.btn-cad {
+    position: absolute;
+    right: 10px;
+    width: 200px;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+    font-weight: 800;
+    border: solid #fff;
+    border-radius: 20px;
+    text-align: center;
+    margin: 10px 0 0 10px;
+    transition: .3s;
+}
+
+.btn-voltar:hover {
+    background-color: #fff;
+    border-color: #EB8242;
+    color: #000;
+    transition: .8s;
+}
+
+.titulo {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    text-align: center;
+    font-size: 3em;
+    color: #fff;
+    margin-top: 5vh;
+}
+
+.produtos {
+    margin-top: 3em;
+    width: 90%;
+}
+
+.produto {
+    border: solid;
+    padding: 15px;
+    margin: 10px 10px 10px 10px;
+    width: 23em;
+    height: 27em;
+    float: left;
+    border-radius: 20px 0 20px;
+}
+
+.produto div {
+    /* background-color: #000; */
+    top: 50%;
+}
+
+.img-prod {
+    width: 10em;
+}
+
+.nome {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 900;
+    width: 70%;
+    color: #fff;
+}
+
+.descricao {
+    color: #fff;
+    margin-top: .2em;
+    margin-bottom: 1em;
+}
+
+.classificacao {
+    text-align: center;
+}
+
+.preco {
+    font-family: 'Montserrat';
+    color: #fff;
+    font-size: 2em;
+    margin-top: .2em;
+}
+
+.star {
+    width: 20px;
+}
+
+.btn-comprar {
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.produto-det {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.produto-det div {
+    /* float: left; */
+    text-align: center;
+}
+
+.cores {
+    padding: 20px;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.frete #cep {
+    padding: 5px;
+    border-radius: 20px;
+}
+
+input {
+    border-radius: 10px;
+    padding: 6px;
+}
+
+#result {
+    display: none;
+}
+
+#sucess {
+    display: none;
+    color: yellow;
+}
+
+.login-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: solid 5px white;
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}

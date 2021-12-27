@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Ghostech Store - Produtos</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body bgcolor="#1C9C9E">
+    <a href="index.html">
+        <div class="btn-voltar">
+            <span>Voltar</span>
+        </div>
+    </a>
+
+    <a href="cadastro_produtos.html">
+        <div class="btn-cad">
+            <span>+</span>
+        </div>
+    </a>
+
+    <div class="titulo">
+        <span>
+            Listagem de Produtos
+        </span>
+    </div>
+
+    <div class="produtos">
+        <div class="produto">
+            <div class="img-prod">
+                <img src="assets/img/headset.png" class="img-prod" alt="...">
+            </div>
+            <div class="nome">Headset Gamer</div>
+            <div class="classificacao">4</div>
+            <div class="preco">R$ 415.00</div>
+            <div class="descricao">Qualidade sonora impecável e qualidade de sobra para os seus games!</div>
+            <div class="btn">
+                <a href="headset.html"><button class="btn-comprar">Detalhes</button></a>
+            </div>
+        </div>
+        <div class="produto">
+            <div class="img-prod">
+                <img src="assets/img/notebook-gamer.png" class="img-prod" alt="...">
+            </div>
+            <div class="nome">Notebook Gamer</div>
+            <div class="classificacao">2</div>
+            <div class="preco">R$ 7319.99</div>
+            <div class="descricao">Com um Celeron de 3ª geração, você nunca ficará atrás dos seus adversários no Fazenda Feliz!</div>
+            <div class="btn">
+                <a href="notebook.html"><button class="btn-comprar">Detalhes</button></a>
+            </div>
+        </div>
+        <div class="produto">
+            <div class="img-prod">
+                <img src="assets/img/cachorrobo.png" class="img-prod" alt="...">
+            </div>
+            <div class="nome">Cachorrobô Gamer</div>
+            <div class="classificacao">5</div>
+            <div class="preco">R$ 849.99</div>
+            <div class="descricao">Te ajuda nas tarefas de casa e brinca com você nas horas vagas! Quer melhor?</div>
+            <div class="btn">
+                <a href="cachorrobo.html"><button class="btn-comprar">Detalhes</button></a>
+            </div>
+        </div>
+        <div class="produto">
+            <div class="img-prod">
+                <img src="assets/img/timao.png" class="img-prod" alt="...">
+            </div>
+            <div class="nome">Pen Drive do Timão</div>
+            <div class="classificacao">5</div>
+            <div class="preco">R$ 59.99</div>
+            <div class="descricao">Você consegue colocar todas as suas músicas para aquele domingo a tarde em família!</div>
+            <div class="btn">
+                <a href="pendrive.html"><button class="btn-comprar">Detalhes</button></a>
+            </div>
+        </div>
+        <div class="produto">
+            <div class="img-prod">
+                <img src="assets/img/twist-tab.png" class="img-prod" alt="...">
+            </div>
+            <div class="nome">Novo Twist Tab</div>
+            <div class="classificacao">3</div>
+            <div class="preco">R$ 169.90</div>
+            <div class="descricao">Para jogos, trabalho e redes sociais, este é o tablet ideal para você!</div>
+            <div class="btn">
+                <a href="tablet.html"><button class="btn-comprar">Detalhes</button></a>
+            </div>
+        </div>
+        <div class="produto">
+            <div class="img-prod">
+                <img src="assets/img/capas-iphone.png" class="img-prod" alt="...">
+            </div>
+            <div class="nome">Capas para iPhone</div>
+            <div class="classificacao">3</div>
+            <div class="preco">R$ 19.90</div>
+            <div class="descricao">Quer dar um nvoo visual para o seu aparelho? O seu lugar é aqui!</div>
+            <div class="btn">
+                <a href="capas.html"><button class="btn-comprar">Detalhes</button></a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var valor = document.getElementsByClassName("classificacao");
+        for (let cont = 0; cont < valor.length; cont++) {
+            val = parseInt(valor[cont].innerText);
+            valor[cont].innerHTML = '';
+            for (star = 0; star < val+1; star++){
+                valor[cont].innerHTML += "<img class='star' src='assets/img/star.png'>";
+            }
+        }
+    </script>
+</body>
+</html>

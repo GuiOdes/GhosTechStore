@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Ghostech Store - Produtos</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body bgcolor="#1C9C9E">
+    <a href="produtos.html">
+        <div class="btn-voltar">
+            <span>Voltar</span>
+        </div>
+    </a>
+
+    <div class="produto-det">
+        <div class="img-prod">
+            <img src="assets/img/cachorrobo.png" class="img-prod" alt="...">
+        </div>
+        <div class="nome">Cachorrobô Gamer</div>
+        <div class="classificacao">5</div>
+        <div class="descricao">Te ajuda nas tarefas de casa e brinca com você nas horas vagas! Quer melhor?</div>
+        <div class="quant">
+            <div style="color: #fff">Quantidade:
+                <select>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+        </div>
+        <div class="cores">
+            <div class="descricao">Seleção de cores:</div>
+            <button class="cores red" onClick="selecionar(this)"></button>
+            <button class="cores green" onClick="selecionar(this)"></button>
+            <button class="cores blue" onClick="selecionar(this)"></button>
+        </div>
+        <div class="frete">
+            <div class="descricao">Calcule prazo e frete: </div>
+            <input type="text" placeholder="CEP">
+            <button id="cep" onclick="frete()">Calcular</button>
+            <div id="result">
+                <br>
+                <table border="1">
+                    <tr>
+                        <td><label for="ent">Entrega Rápida</label></td>
+                        <td><label for="ent">R$ 100.00</label></td>
+                        <td><input type="radio" name="entrega" id="ent"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="ente">Entrega Econômica</label></td>
+                        <td><label for="ent">R$ 65.40</label></td>
+                        <td><input type="radio" name="entrega" id="ente"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="compra">
+            <div class="preco">R$ 849.99</div><br>
+            <button class="btn-comprar" onclick="comprar()">Comprar</button>
+        </div>
+        <div id="sucess">Compra efetuada com sucesso!</div>
+    </div>
+
+    <script>
+        var valor = document.getElementsByClassName("classificacao");
+        for (let cont = 0; cont < valor.length; cont++) {
+            val = parseInt(valor[cont].innerText);
+            valor[cont].innerHTML = '';
+            for (star = 0; star < val+1; star++){
+                valor[cont].innerHTML += "<img class='star' src='assets/img/star.png'>";
+            }
+        }
+    </script>
+    <script src="assets/js/functions.js"></script>
+</body>
+</html>
